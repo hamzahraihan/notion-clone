@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/navigation-bar";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
@@ -29,7 +28,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navigation />
           {children}
         </ThemeProvider>
       </body>

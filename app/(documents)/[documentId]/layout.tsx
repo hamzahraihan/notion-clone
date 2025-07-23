@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function DocumentLayout({ children }: { children: ReactNode }) {
   return (
     <SidebarProvider defaultOpen={true}>
-      <AppSidebar variant="floating" />
-      <main className="py-4 px-2">{children}</main>
+      <AppSidebar />
+      <main className="w-full">{children}</main>
     </SidebarProvider>
   );
 }

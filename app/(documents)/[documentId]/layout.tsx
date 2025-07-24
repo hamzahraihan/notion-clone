@@ -2,6 +2,7 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
+import NavigationBar from "../_components/navigation-bar";
 
 export const metadata: Metadata = {
   title: "Documents",
@@ -12,7 +13,10 @@ export default function DocumentLayout({ children }: { children: ReactNode }) {
   return (
     <SidebarProvider defaultOpen={true}>
       <AppSidebar />
-      <main className="w-full">{children}</main>
+      <main className="w-full">
+        <NavigationBar />
+        {children}
+      </main>
     </SidebarProvider>
   );
 }

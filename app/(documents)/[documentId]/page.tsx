@@ -11,6 +11,7 @@ export default async function Documents({
   return (
     <div className="max-w-full py-4 px-2 m-auto">
       <div className="w-full max-w-9/12 m-auto">
+        <div className="text-white/70 pt-20">page control</div>
         <Editor />
       </div>
     </div>

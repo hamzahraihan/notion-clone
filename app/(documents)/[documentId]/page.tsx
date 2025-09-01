@@ -9,8 +9,8 @@ export default async function Documents({
   console.log(documentId);
 
   return (
-    <div className="max-w-full py-4 px-2 m-auto">
-      <div className="w-full m-auto">
+    <div className="max-w-full py-4 px-2">
+      <div className="max-w-5xl p-4 m-auto">
         <div className="text-white/70 pt-20">page control</div>
         <Editor />
       </div>

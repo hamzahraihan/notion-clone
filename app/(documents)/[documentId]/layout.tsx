@@ -11,12 +11,14 @@ export const metadata: Metadata = {
 
 export default function DocumentLayout({ children }: { children: ReactNode }) {
   return (
-    <SidebarProvider defaultOpen={true}>
-      <AppSidebar />
-      <main className="min-w-dvh ">
-        <NavigationBar />
-        {children}
-      </main>
-    </SidebarProvider>
+    <main className="w-full">
+      <SidebarProvider defaultOpen={true}>
+        <AppSidebar />
+        <div className="w-full">
+          <NavigationBar />
+          {children}
+        </div>
+      </SidebarProvider>
+    </main>
   );
 }

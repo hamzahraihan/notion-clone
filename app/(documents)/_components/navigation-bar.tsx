@@ -18,7 +18,7 @@ export default function NavigationBar() {
   console.log(isFavorite);
 
   return (
-    <div className="sticky top-0 flex justify-between items-center p-2 px-6 z-10 bg-background">
+    <div className="sticky -z-10 top-0 flex justify-between items-center p-2 px-6 bg-background">
       <div>
         <Breadcrumb>
           <BreadcrumbList>

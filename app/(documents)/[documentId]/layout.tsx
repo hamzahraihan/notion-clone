@@ -13,7 +13,7 @@ export default function DocumentLayout({ children }: { children: ReactNode }) {
   return (
     <SidebarProvider defaultOpen={true}>
       <AppSidebar />
-      <main className="w-full">
+      <main className="min-w-dvh ">
         <NavigationBar />
         {children}
       </main>
